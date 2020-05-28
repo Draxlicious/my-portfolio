@@ -1,10 +1,15 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
 #home-wrapper {
-  background: #333 url("/public/img/workingspace.jpg") center/100% no-repeat;
+  background: #333 url("/public/img/workingspace.jpg") center/150% no-repeat;
   background-blend-mode: hard-light;
   height: 100vh;
   width: 100%;
@@ -56,18 +61,6 @@ body {
   text-align: center;
 }
 
-.home-title-container--blue {
-  color: #0085FF;
-}
-
-.btn {
-  background-color: #0085FF;
-  padding: 10px 35px;
-  border-radius: 20px;
-  text-decoration: none;
-  color: white;
-}
-
 #about-wrapper {
   height: 75vh;
   display: -webkit-box;
@@ -92,29 +85,14 @@ body {
   width: auto;
 }
 
-.about-title {
-  color: #0085FF;
-}
-
-.about-content {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  margin: 2.5em 0;
-}
-
 .books-image {
   margin: 5em 0;
 }
 
 .books-image__parallax {
-  background: url("/public/img/computer.jpg") center/150% fixed no-repeat;
+  background: url("/public/img/computer.jpg") center/100% fixed no-repeat;
   min-height: 350px;
   width: 100%;
-}
-
-#service-wrapper {
-  min-height: 100vh;
 }
 
 .service-container {
@@ -131,5 +109,78 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.service-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 4em;
+  text-align: center;
+}
+
+.service-card {
+  height: auto;
+  width: 325px;
+  background-color: #ffffff;
+  z-index: 1;
+  padding: 3em;
+}
+
+.blue-banner {
+  height: 30vh;
+  background-color: #0085FF;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+.portfolio-grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  grid-gap: 2em;
+  margin: 0px 14em;
+  padding: 5em;
+}
+
+.portfolio-grid-image {
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  background-color: 333;
+}
+
+.portfolio-grid-image--small {
+  height: 400px;
+}
+
+.text-contrast {
+  color: #8f8f8f;
+}
+
+.heading-color {
+  color: #0085FF;
+}
+
+.btn {
+  background-color: #0085FF;
+  padding: 10px 35px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.center-content {
+  width: 50%;
+  text-align: center;
+  margin: 2.5em auto;
 }
 /*# sourceMappingURL=style.css.map */

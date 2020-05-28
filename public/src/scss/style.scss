@@ -1,4 +1,5 @@
 $primaryColor: #0085FF;
+$textColor: rgb(143, 143, 143);
 
 @mixin flex-box{
     display: flex;
@@ -7,13 +8,15 @@ $primaryColor: #0085FF;
     flex-direction: column;
 }
 @mixin content-center{
-    width:50%;
     margin: 0 auto;
     text-align: center;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    // background-color: black;
     margin: 0;
     padding: 0;
 }
@@ -58,18 +61,6 @@ html {
     text-align: center;
 }
 
-.home-title-container--blue{
-    color:$primaryColor;
-}
-
-.btn {
-    background-color: $primaryColor;
-    padding: 10px 35px;
-    border-radius: 20px;
-    text-decoration: none;
-    color:white;
-}
-
 // =================================
 // ======== ABOUT SECTION ==========
 // =================================
@@ -86,14 +77,7 @@ html {
     width:auto;
 }
 
-.about-title{
-    color: $primaryColor;
-}
 
-.about-content{
-    @include content-center();
-    margin: 2.5em 0;
-}
 
 .books-image{
     margin: 5em 0;
@@ -108,10 +92,85 @@ html {
 // =================================
 // ======= SERVICE SECTION =========
 // =================================
-#service-wrapper{
-    min-height: 100vh;
-}
+// #service-wrapper{
+// }
 
 .service-container{
     @include flex-box();
+}
+
+
+.service-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4em;
+    text-align: center;
+}
+
+.service-card{
+    height: auto;
+    width: 325px;
+    background-color: #ffffff;
+    z-index: 1;
+    padding: 3em;
+}
+
+.blue-banner{
+    height:30vh;
+    background-color: $primaryColor;
+    transform: translateY(-100px);
+}
+
+// =================================
+// ========= RECENT WORK ===========
+// =================================
+
+#portfolio-wrapper{
+    // @include content-center()
+}
+
+.portfolio-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    grid-gap: 2em;
+    margin: 0px 14em;
+    padding: 5em;
+
+    &-image{
+        justify-self: stretch;
+        background-color: 333;
+
+        &--small{
+            height:400px;
+        }
+    }
+}
+
+// =================================
+// ====== COMMON FOREVERYONE =======
+// =================================
+
+.text-contrast{
+    color:$textColor
+}
+
+.heading-color{
+    color:$primaryColor
+}
+
+.btn {
+    background-color: $primaryColor;
+    padding: 10px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+}
+
+.center-content{
+    width:50%;
+    text-align: center;
+    margin: 2.5em auto;
 }
