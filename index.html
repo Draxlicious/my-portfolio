@@ -34,7 +34,8 @@
     <div id="about-wrapper">
         <h1 class="heading-color">Who Am I?</h1>
         <img class="profile-picture" src="public/img/standard_luks.png">
-        <p class="text-contrast center-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repudiandae
+        <p class="text-contrast center-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            repudiandae
             voluptate sit
             laborum maxime fugit
             tempore dolore voluptatem! Consequuntur natus ipsam accusantium officia. Vitae sunt maxime odio velit itaque
@@ -134,20 +135,40 @@
             <img class="portfolio-grid-image" src="/public/img/placeholder/coast.png">
         </div>
     </div>
-    <!-- CONTACT -->
-    <div>
-        <h2>Contact Us</h2>
-        <p>Easy way to catch me</p>
-    </div>
 
-    <form>
-        <label>Name</label>
-        <input type="text" name="text">
-        <label>Email</label>
-        <input type="email" name="email">
-        <textarea cols="50" rows="15"></textarea>
-        <input type="submit" value="Send">
-    </form>
+    <!-- CONTACT -->
+    <div id="contact-wapper">
+        <div>
+            <h2>Contact Us</h2>
+            <p class="text-contrast">Easy way to contact me</p>
+        </div>
+
+        <form class="contact-form">
+            <div class="contact-form__label-container">
+                <div class="contact-form__labels">
+                    <label>Name</label>
+                    <input type="text" name="text" placeholder="Name">
+                </div>
+                <div class="contact-form__labels">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+            </div>
+            <label>Message</label>
+            <textarea cols="50" rows="15" placeholder="Message"></textarea>
+            <input class="contact-btn" type="submit" value="Send">
+        </form>
+        
+        <footer class="footer">
+            <div class="icon">
+                <img src="public/img/icons/facebook.png">
+                <img src="public/img/icons/twitter.png">
+                <img src="public/img/icons/linkedin.png">
+                <img src="public/img/icons/github.png">
+            </div>
+            <p class="text-contrast">Designed and Developed By Lukas&copy;</p>
+        </footer>
+    </div>
 
     <script src="public/assets/index.js"></script>
 </body>

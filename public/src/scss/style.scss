@@ -150,6 +150,62 @@ html {
 }
 
 // =================================
+// =========== Contact =============
+// =================================
+#contact-wapper{
+    @include content-center();
+}
+
+.contact-form{
+    border: 1px solid $primaryColor;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2em auto;
+
+
+    &__label-container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__labels{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact-form input, textarea {
+    border: 1px solid $primaryColor;
+}
+
+.contact-form textarea {
+    width: 50%;
+    margin: 0 auto;
+    resize: none;
+}
+
+.contact-form label{
+    padding: 1em;
+    color: $primaryColor;
+}
+
+.contact-btn{
+    background-color: $primaryColor;
+    border-radius: 0;
+    padding: 1em;
+    width: 20%;
+    margin: 2em auto;
+    color:white;
+    text-transform: uppercase;
+}
+
+.footer img{
+    height:2em;
+    width: auto;
+}
+
+// =================================
 // ====== COMMON FOREVERYONE =======
 // =================================
 
