@@ -14,6 +14,225 @@ $textColor: rgb(143, 143, 143);
 
 
 
+
+// ==================================================================
+// =================================
+// =========== Tablet ==============
+// =================================
+// ==================================================================
+
+// Tablet
+@media only screen and (max-width: 768px){
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        // color:white;
+    }
+    
+    // =================================
+    // ========= HOME SECTION ==========
+    // =================================
+    #home-wrapper{
+        background: #333 url("/public/img/workingspace.jpg") center/cover fixed no-repeat;
+        background-blend-mode: hard-light;
+        height:100vh;
+        width:100%;
+        color:white;
+    }
+    
+    .navbar{
+        height:50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3em;
+        
+        &__list{
+            display:none;
+    
+            &-item{
+                margin-left:10px;
+            }
+        }
+    }
+    
+    .home-title-container{
+        @include flex-box();
+        height: calc(100% - 50px);
+        text-align: center;
+    }
+    
+    // =================================
+    // ======== ABOUT SECTION ==========
+    // =================================
+    
+    #about-wrapper{
+        @include flex-box();
+        text-align: center;
+    }
+    
+    .profile-picture{
+        border-radius: 50%;
+        height: 50%;
+        width:auto;
+    }
+    
+    
+    
+    .books-image{
+        margin: 5em 0;
+        &__parallax{
+            background:url("/public/img/computer.jpg") center/200% no-repeat;
+            min-height: 211px;
+            width:100%;
+        }
+    }
+    
+    
+    // =================================
+    // ======= SERVICE SECTION =========
+    // =================================
+    // #service-wrapper{
+    // }
+    
+    .service-container{
+        @include flex-box();
+    }
+    
+    
+    .service-card-container{
+        @include flex-box();
+        margin-top: 4em;
+        text-align: center;
+    }
+    
+    .service-card{
+        height: auto;
+        width: 325px;
+        background-color: #ffffff;
+        z-index: 1;
+        margin: 1em 0;
+    }
+    
+    .blue-banner{
+        height:30vh;
+        background-color: $primaryColor;
+        transform: translateY(-100px);
+    }
+    
+    // =================================
+    // ========= RECENT WORK ===========
+    // =================================
+    
+    #portfolio-wrapper{
+        // @include content-center()
+    }
+    
+    .portfolio-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+        margin: 0px 10%;
+        
+        &-image{
+            justify-self: stretch;
+            background-color: 333;
+            
+            &--small{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+    
+    // =================================
+    // =========== Contact =============
+    // =================================
+    #contact-wapper{
+        @include content-center();
+    }
+    
+    .contact-form{
+        border: 1px solid $primaryColor;
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+    
+    
+        &__label-container{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__labels{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    .contact-form input, textarea {
+        border: 1px solid $primaryColor;
+        margin: 1em 2em;
+    }
+    
+    .contact-form textarea {
+        resize: none;
+    }
+    
+    .contact-form label{
+        padding: 1em;
+        color: $primaryColor;
+    }
+    
+    .contact-btn{
+        background-color: $primaryColor;
+        border-radius: 0;
+        padding: 1em;
+        margin: 2em auto;
+        color:white;
+        text-transform: uppercase;
+    }
+    
+    .footer img{
+        height:2em;
+        width: auto;
+    }
+    
+    // =================================
+    // ====== COMMON FOREVERYONE =======
+    // =================================
+    
+    .text-contrast{
+        color:$textColor
+    }
+    
+    .heading-color{
+        color:$primaryColor
+    }
+    
+    .btn {
+        background-color: $primaryColor;
+        padding: 10px 35px;
+        border-radius: 20px;
+        text-decoration: none;
+        color:white;
+    }
+    
+    .center-content{
+        width:75%;
+        text-align: center;
+        margin: 2.5em auto;
+    }
+}
+
 // ==================================================================
 // =================================
 // =========== MOBILE ==============
@@ -40,7 +259,7 @@ $textColor: rgb(143, 143, 143);
     // ========= HOME SECTION ==========
     // =================================
     #home-wrapper{
-        background: #333 url("/public/img/workingspace.jpg") center/cover no-repeat;
+        background: #333 url("/public/img/workingspace.jpg") center/cover  fixed no-repeat;
         background-blend-mode: hard-light;
         height:100vh;
         width:100%;
@@ -244,12 +463,10 @@ $textColor: rgb(143, 143, 143);
 
 
 
-
-
 // =================================
 // =========== COMPUTER ============
 // =================================
-@media only screen and (min-width:750px){
+@media only screen and (min-width:769px){
     * {
         box-sizing: border-box;
     }
@@ -267,7 +484,7 @@ $textColor: rgb(143, 143, 143);
     // ========= HOME SECTION ==========
     // =================================
     #home-wrapper{
-        background: #333 url("/public/img/workingspace.jpg") center/150% no-repeat;
+        background: #333 url("/public/img/workingspace.jpg") center/150% fixed no-repeat;
         background-blend-mode: hard-light;
         height:100vh;
         width:100%;
