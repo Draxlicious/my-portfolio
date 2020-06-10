@@ -187,6 +187,16 @@ $textColor: rgb(143, 143, 143);
         padding: 1em;
         color: white;
     }
+
+    .error_message{
+        color:rgb(255, 87, 87);
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+
+    .contact_confirmed{
+        color:lightgreen;
+    }
     
     .contact-btn{
         background-color: rgb(124, 192, 255);
@@ -353,6 +363,7 @@ $textColor: rgb(143, 143, 143);
 
     .service-card{
         padding: 3em;
+        width: 20%;
     }
 
     .blue-banner{
