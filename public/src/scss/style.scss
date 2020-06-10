@@ -35,6 +35,7 @@ $textColor: rgb(143, 143, 143);
 
     html {
         font-family: Mukta;
+        scroll-behavior:smooth
     }
 
     
@@ -108,20 +109,16 @@ $textColor: rgb(143, 143, 143);
         @include flex-box();
         margin-top: 4em;
         text-align: center;
+        background-color: $primaryColor;
     }
     
     .service-card{
         height: auto;
-        width: 325px;
+        width: 90%;
         background-color: #ffffff;
         z-index: 1;
         margin: 1em 0;
-    }
-    
-    .blue-banner{
-        height:30vh;
-        background-color: $primaryColor;
-        transform: translateY(-100px);
+        padding: 1em 2em;
     }
     
     // =================================
@@ -158,6 +155,7 @@ $textColor: rgb(143, 143, 143);
         display: flex;
         flex-direction: column;
         margin: 2em;
+        background-color:#0085FF;
     
     
         &__label-container{
@@ -175,22 +173,28 @@ $textColor: rgb(143, 143, 143);
         border: 1px solid $primaryColor;
         margin: 1em 2em;
     }
+
+    .contact-form input{
+        padding: 0.5em;
+    }
     
     .contact-form textarea {
         resize: none;
+        padding: 0.5em
     }
     
     .contact-form label{
         padding: 1em;
-        color: $primaryColor;
+        color: white;
     }
     
     .contact-btn{
-        background-color: $primaryColor;
-        border-radius: 0;
+        background-color: rgb(124, 192, 255);
+        border: 0;
         padding: 1em;
-        margin: 2em auto;
+        margin: 2em 2em;
         color:white;
+        font-weight: 1000;
         text-transform: uppercase;
     }
     
@@ -279,6 +283,11 @@ $textColor: rgb(143, 143, 143);
     // =================================
     // =========== Contact =============
     // =================================
+
+    .contact-form input{
+        width: 50%;
+        margin: 0 auto;
+    }
     
 }
 // ================= TABLET ENDS HERE=========================
@@ -339,6 +348,7 @@ $textColor: rgb(143, 143, 143);
     .service-card-container{
         justify-content: space-evenly;
         flex-direction: row;
+        background-color: transparent;
     }
 
     .service-card{
@@ -348,7 +358,7 @@ $textColor: rgb(143, 143, 143);
     .blue-banner{
         height:30vh;
         background-color: $primaryColor;
-        transform: translateY(-100px);
+        transform: translateY(-150px);
     }
 
     // =================================
@@ -367,9 +377,16 @@ $textColor: rgb(143, 143, 143);
         @include content-center();
     }
 
-    .contact-form{
+    .contact-form input{
         width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact-form{
+        width: 35%;
         margin: 2em auto;
     }
+
+    // .contact-btn
 }
 // ================= COMPUTER ENDS HERE=========================
