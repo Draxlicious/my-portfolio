@@ -5,7 +5,6 @@ Lukas Portfolio
 ## sass compile
 **
 ```css
-
-sass --watch public/src/scss/style.scss:public/dist/css/style.css
+sass --watch public/src/scss/:public/dist/css
 
 ```
