@@ -1,0 +1,401 @@
+$primaryColor: #0085FF;
+$textColor: rgb(143, 143, 143);
+
+@mixin flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@mixin content-center{
+    margin: 0 auto;
+    text-align: center;
+}
+
+@mixin links {
+    text-decoration: none;
+    color:white;
+    list-style-type: none;
+}
+
+
+// ==================================================================
+// =========== MOBILE ==============
+// ==================================================================
+// iphone 6/7/8
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    html {
+        font-family: Mukta;
+        scroll-behavior:smooth
+    }
+
+    
+    // =================================
+    // ========= HOME SECTION ==========
+    // =================================
+    #home-wrapper{
+        background: #333 url("/public/img/workingspace.jpg") center/cover no-repeat;
+        background-blend-mode: hard-light;
+        height:100vh;
+        width:100%;
+        color:white;
+    }
+    
+    .navbar{
+        height:50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3em;
+        
+        &__list{
+            display:none;
+    
+            &-item{
+                margin-left:10px;
+            }
+        }
+    }
+    
+    .home-title-container{
+        @include flex-box();
+        height: calc(100% - 50px);
+        text-align: center;
+    }
+    
+    // =================================
+    // ======== ABOUT SECTION ==========
+    // =================================
+    #about-wrapper{
+        @include flex-box();
+        text-align: center;
+    }
+    
+    .profile-picture{
+        border-radius: 50%;
+        height: 50%;
+        width:auto;
+    }
+    
+    
+    
+    .books-image{
+        margin: 5em 0;
+        &__parallax{
+            background:url("/public/img/computer.jpg") center/100% fixed no-repeat;
+            min-height: 211px;
+            width:100%;
+        }
+    }
+    
+    
+    // =================================
+    // ======= SERVICE SECTION =========
+    // =================================
+    .service-container{
+        @include flex-box();
+    }
+    
+    
+    .service-card-container{
+        @include flex-box();
+        margin-top: 4em;
+        text-align: center;
+        background-color: $primaryColor;
+    }
+    
+    .service-card{
+        height: auto;
+        width: 90%;
+        background-color: #ffffff;
+        z-index: 1;
+        margin: 1em 0;
+        padding: 1em 2em;
+    }
+    
+    // =================================
+    // ========= RECENT WORK ===========
+    // =================================
+    
+    .portfolio-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        margin: 0px 10%;
+        
+        &-image{
+            
+            &--small{
+                height: 400px;
+                width: 300px;
+            }
+        }
+    }
+    
+    
+    // =================================
+    // =========== Contact =============
+    // =================================
+    #contact-wrapper{
+        @include content-center();
+    }
+    
+    .contact-form{
+        border: 1px solid $primaryColor;
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+        background-color:#0085FF;
+    
+    
+        &__label-container{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__labels{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    .contact-form input, textarea {
+        border: 1px solid $primaryColor;
+        margin: 1em 2em;
+    }
+
+    .contact-form input{
+        padding: 0.5em;
+    }
+    
+    .contact-form textarea {
+        resize: none;
+        padding: 0.5em
+    }
+    
+    .contact-form label{
+        padding: 1em;
+        color: white;
+    }
+
+    .error_message{
+        color:rgb(255, 87, 87);
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+
+    .contact_confirmed{
+        color:lightgreen;
+    }
+    
+    .contact-btn{
+        background-color: rgb(124, 192, 255);
+        border: 0;
+        padding: 1em;
+        margin: 2em 2em;
+        color:white;
+        font-weight: 1000;
+        text-transform: uppercase;
+    }
+    
+    .footer img{
+        height:2em;
+        width: auto;
+    }
+    
+    // =================================
+    // ====== COMMON FOREVERYONE =======
+    // =================================
+    
+    .text-contrast{
+        color:$textColor
+    }
+    
+    .heading-color{
+        color:$primaryColor
+    }
+    
+    .btn {
+        background-color: $primaryColor;
+        padding: 10px 35px;
+        border-radius: 20px;
+        text-decoration: none;
+        color:white;
+    }
+    
+    .center-content{
+        width:75%;
+        text-align: center;
+        margin: 2.5em auto;
+    }
+// ==================== MOBILE ENDS HERE ============================
+
+
+
+// ==================================================================
+// =========== Tablet ==============
+// ==================================================================
+
+// Tablet/ipad
+@media only screen and (max-width: 768px) and (min-width: 600px){
+
+    // =================================
+    // ========= HOME SECTION ==========
+    // =================================
+    
+    .navbar{
+        height:50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3em;
+        
+        &__list{
+            display:none;
+    
+            &-item{
+                margin-left:10px;
+            }
+        }
+    }
+    
+
+    .home-title-container h1{
+        font-size:4em;
+    }
+    
+    // =================================
+    // ======== ABOUT SECTION ==========
+    // =================================
+    
+    // =================================
+    // ======= SERVICE SECTION =========
+    // =================================
+    
+    // =================================
+    // ========= RECENT WORK ===========
+    // =================================
+    
+    .portfolio-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+    // =================================
+    // =========== Contact =============
+    // =================================
+
+    .contact-form input{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+}
+// ================= TABLET ENDS HERE=========================
+
+
+
+
+// ========================================================================================================================
+// =========== COMPUTER ============
+// ========================================================================================================================
+@media only screen and (min-width:769px){
+
+    // =================================
+    // ========= HOME SECTION ==========
+    // =================================
+    #home-wrapper{
+        background: #333 url("/public/img/workingspace.jpg") center/150% no-repeat;
+    }
+
+    .navbar{
+        height:50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3em;
+        
+        &__list{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+
+            &-item{
+                margin-left:10px;
+            }
+        }
+
+        &--links{
+            @include links();
+        }
+    }
+
+    .home-title-container h1{
+        font-size:4em;
+    }
+
+    // =================================
+    // ======== ABOUT SECTION ==========
+    // =================================
+
+    // =================================
+    // ======= SERVICE SECTION =========
+    // =================================
+    .service-container{
+        @include flex-box();
+    }
+
+    .service-card-container{
+        justify-content: space-evenly;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .service-card{
+        padding: 3em;
+        width: 20%;
+    }
+
+    .blue-banner{
+        height:30vh;
+        background-color: $primaryColor;
+        transform: translateY(-150px);
+    }
+
+    // =================================
+    // ========= RECENT WORK ===========
+    // =================================
+
+    .portfolio-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+
+    // =================================
+    // =========== Contact =============
+    // =================================
+    #contact-wrapper{
+        @include content-center();
+    }
+
+    .contact-form input{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact-form{
+        width: 35%;
+        margin: 2em auto;
+    }
+
+    // .contact-btn
+}
+// ================= COMPUTER ENDS HERE=========================
