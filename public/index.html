@@ -13,7 +13,7 @@
     <!-- HOME -->
     <div id="home-wrapper">
         <nav class="navbar">
-            <h1>Lukas Portfolio</h1>
+            <a class="home-heading" href="#"><h1">Lukas Portfolio</h1></a>
             <ul class="navbar__list">
                 <a class="navbar--links" href="#"><li class="navbar__list-item">Hjem</li></a>
                 <a class="navbar--links" href="#about-wrapper"><li class="navbar__list-item">Om mig</li></a>
@@ -141,21 +141,21 @@ Jeg er som sagt uddannet webudvikler, og jeg har fra mit uddannelsesforløb erfa
         </div>
 
     <div class="portfolio-grid">
-            <a class="box1" href="https://todolist-lukas.netlify.app/"><div class="todolist"></div><img class="portfolio-grid-image portfolio-grid-image--small" src="img/screencapture-todolist-lukas-netlify-app-2020-07-15-16_23_39.png"></a>
-            <a href="https://pointgame-lukas.netlify.app/"><img class="portfolio-grid-image " src="img/placeholder/woman.png"></a>
-            <a href="https://colorgame-lukas.netlify.app/"><img class="portfolio-grid-image" src="img/placeholder/tree.png"></a>
-            <a href="https://firebase-login-lukas.netlify.app/"><img class="portfolio-grid-image" src="img/placeholder/bird.png"></a>
-            <img class="portfolio-grid-image" src="img/placeholder/flower.png">
-            <img class="portfolio-grid-image" src="img/placeholder/eye.png">
-            <img class="portfolio-grid-image" src="img/placeholder/baloon.png">
-            <img class="portfolio-grid-image" src="img/placeholder/coast.png">
+            <a class="image-relative" href="https://todolist-lukas.netlify.app/"><div class="image1-text"></div><img class="portfolio-grid-image portfolio-grid-image--small" src="img/TodoList.png"></a>
+            <a class="image-relative" href="https://pointgame-lukas.netlify.app/"><div class="image2-text"></div><img class="portfolio-grid-image portfolio-grid-image--small" style="border:1px solid black" src="img/PointGame.png"></a>
+            <a class="image-relative" href="https://colorgame-lukas.netlify.app/"><div class="image3-text"></div><img  class="portfolio-grid-image portfolio-grid-image--small" src="img/colorGame.png"></a>
+            <a class="image-relative" href="https://firebase-login-lukas.netlify.app/"><div class="image4-text"></div><img class="portfolio-grid-image portfolio-grid-image--small" src="img/authentication.png"></a>
+            <img class="portfolio-grid-image portfolio-grid-image--small" src="img/placeholder/flower.png">
+            <img class="portfolio-grid-image portfolio-grid-image--small" src="img/placeholder/eye.png">
+            <img class="portfolio-grid-image portfolio-grid-image--small" src="img/placeholder/baloon.png">
+            <img class="portfolio-grid-image portfolio-grid-image--small" src="img/placeholder/coast.png">
         </div>
     </div>
 
 
     <!-- CONTACT -->
     <div id="contact-wrapper">
-        <div>
+        <div class="latest-work-container">
             <h2 class="heading-color">Kontakt mig</h2>
             <p class="text-contrast">nem måde at få fat i mig</p>
         </div>
@@ -163,28 +163,28 @@ Jeg er som sagt uddannet webudvikler, og jeg har fra mit uddannelsesforløb erfa
         <form class="contact-form">
             <div class="contact-form__label-container">
                 <div class="contact-form__labels">
-                    <label>Name</label>
-                    <input type="text" name="text" placeholder="Name">
+                    <label>Navn</label>
+                    <input type="text" name="text" placeholder="Navn">
                 </div>
                 <div class="contact-form__labels">
                     <label>Email</label>
                     <input type="email" name="email" placeholder="Email">
                 </div>
             </div>
-            <label>Message</label>
-            <textarea cols="50" rows="15" placeholder="Message"></textarea>
+            <label>Besked</label>
+            <textarea cols="50" rows="15" placeholder="Besked"></textarea>
             <div class="error_message"></div>
             <button class="contact-btn">send</button>
         </form>
         
         <footer class="footer">
             <div class="icon">
-                <img src="img/icons/facebook.png">
-                <img src="img/icons/twitter.png">
-                <img src="img/icons/linkedin.png">
-                <img src="img/icons/github.png">
+                <a href=""><img src="img/icons/facebook.png"></a>
+                <a href="https://twitter.com/lukasjakobsen17"><img src="img/icons/twitter.png"></a>
+                <a href="https://www.linkedin.com/in/lukasjakobsen/"><img src="img/icons/linkedin.png"></a>
+                <a href="https://github.com/Draxlicious"><img src="img/icons/github.png"></a>
             </div>
-            <p class="text-contrast">Designed and Developed By Lukas&copy;</p>
+            <p class="text-contrast">Design & Udvikling af Lukas&copy;</p>
         </footer>
     </div>
 

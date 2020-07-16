@@ -18,6 +18,15 @@ $textColor: rgb(143, 143, 143);
     list-style-type: none;
 }
 
+@mixin image-before{
+    position:absolute;
+    font-size: 2em;
+    color:#0085FF;
+    top: 50%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
 
 // ==================================================================
 // =========== MOBILE ==============
@@ -316,6 +325,12 @@ $textColor: rgb(143, 143, 143);
         background: #333 url("/public/img/workingspace.jpg") center/150% no-repeat;
     }
 
+    .home-heading{
+        color:white;
+        text-decoration: none;
+        font-size: 2em;
+    }
+
     .navbar{
         height:50px;
         display: flex;
@@ -375,18 +390,24 @@ $textColor: rgb(143, 143, 143);
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    .box1{
+    .image-relative{
         position: relative;
     }
-    .todolist::before{
-        content:'Todolist';
-        position:absolute;
-        font-size: 2em;
-        color:white;
-        top: 50%;
-        left: 40%;
-        transform: translateX(-50%);
-        
+    .image1-text::before{
+        content:'Todo List';
+        @include image-before();
+    }
+    .image2-text::before{
+        content:'Point Game';
+        @include image-before();
+    }
+    .image3-text::before{
+        content:'Color Game';
+        @include image-before();
+    }
+    .image4-text::before{
+        content:'Firebase Auth';
+        @include image-before();
     }
 
 
@@ -395,6 +416,10 @@ $textColor: rgb(143, 143, 143);
     // =================================
     #contact-wrapper{
         @include content-center();
+    }
+
+    .latest-work-container{
+        padding-top: 2em;
     }
 
     .contact-form input{
