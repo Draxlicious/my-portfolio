@@ -9,7 +9,7 @@ contactForm.addEventListener("click", function(e){
     let errorMessage = document.querySelector(".error_message")
 
     if (nameInput === "" || nameInput === "" || textAreaInput === "" ) {
-        errorMessage.innerHTML = "Please fill out all fields"
+        errorMessage.innerHTML = "Udfyld venligst alle felter"
     }else{
         if(nameInput.length < 3){
             errorMessage.innerHTML = "Name must be atleast 3 characters"
@@ -17,10 +17,10 @@ contactForm.addEventListener("click", function(e){
                 var atpos = emailInput.indexOf("@");
                 var dotpos = emailInput.lastIndexOf(".");
                 if( atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailInput.length){
-                    errorMessage.innerHTML = "Please use valid email"
+                    errorMessage.innerHTML = "Brug en gyldig email"
             }else{
                 errorMessage.classList.add("contact_confirmed")
-                errorMessage.innerHTML = nameInput + ' is regristered with ' + emailInput;
+                errorMessage.innerHTML = nameInput + ' er regristeret med ' + emailInput;
             }
         }
     }
