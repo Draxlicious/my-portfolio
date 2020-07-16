@@ -409,6 +409,10 @@ $textColor: rgb(143, 143, 143);
         content:'Firebase Auth';
         @include image-before();
     }
+    .image5-text::before{
+        content:'Kommende';
+        @include image-before();
+    }
 
 
     // =================================
