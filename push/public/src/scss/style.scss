@@ -139,7 +139,7 @@ $textColor: rgb(143, 143, 143);
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2em;
-        margin: 0px 10%;
+        margin: 0px 5%;
         
         &-image{
             background-size: cover;
@@ -376,7 +376,7 @@ $textColor: rgb(143, 143, 143);
     }
 
     .service-card{
-        width: 17%;
+        width: 25%;
         height:437px;
         padding-bottom: 10px;
     }
@@ -432,7 +432,7 @@ $textColor: rgb(143, 143, 143);
     }
 
     .contact-form{
-        width: 35%;
+        width: 50%;
         margin: 2em auto;
     }
 
