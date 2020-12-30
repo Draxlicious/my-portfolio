@@ -414,6 +414,10 @@ $textColor: rgb(143, 143, 143);
         content:'Andelsforeningen';
         @include image-before();
     }
+    .image6-text::before{
+        content:'Kommende';
+        @include image-before();
+    }
 
 
     // =================================
