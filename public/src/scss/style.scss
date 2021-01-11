@@ -415,7 +415,15 @@ $textColor: rgb(143, 143, 143);
         @include image-before();
     }
     .image6-text::before{
-        content:'Kommende';
+        content:'Filter';
+        @include image-before();
+    }
+    .image7-text::before{
+        content:'Slider';
+        @include image-before();
+    }
+    .image8-text::before{
+        content:'Hex-changer';
         @include image-before();
     }
 
