@@ -399,7 +399,7 @@ $textColor: rgb(143, 143, 143);
         @include image-before();
     }
     .image2-text::before{
-        content:'Point Game';
+        content:'Validate';
         @include image-before();
     }
     .image3-text::before{
