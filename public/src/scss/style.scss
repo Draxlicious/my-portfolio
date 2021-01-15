@@ -347,7 +347,12 @@ $textColor: rgb(143, 143, 143);
 
             &-item{
                 margin-left: 25px;
-                font-size: 1.5em;
+                font-size: 1.2em;
+            }
+            &-item:hover{
+                border-bottom: 1px solid white;
+                border-width: 75%;
+                display: inline;               
             }
         }
 
