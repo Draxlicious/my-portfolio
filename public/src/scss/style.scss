@@ -400,6 +400,7 @@ $textColor: rgb(143, 143, 143);
     .image-relative{
         position: relative;
     }
+
     .image1-text::before{
         content:'Todo List';
         @include image-before();
