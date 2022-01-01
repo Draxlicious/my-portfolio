@@ -399,6 +399,9 @@ $textColor: rgb(143, 143, 143);
 
     .image-relative{
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .image1-text::before{
